@@ -28,9 +28,9 @@ const Navigation = () => {
         {/* SG Logo */}
         <div className="flex items-center space-x-3">
           <img 
-            src="/lovable-uploads/9da8b5f8-0cff-4611-8a2a-71824747684b.png" 
+            src="/lovable-uploads/956a76c8-104c-4ddb-b3a3-e3bf1e0245cb.png" 
             alt="SG Logo" 
-            className="h-10 w-10 object-contain"
+            className="h-10 w-10 object-cover rounded-full"
           />
           <span className="font-poppins font-semibold text-xl">Sanu George</span>
         </div>

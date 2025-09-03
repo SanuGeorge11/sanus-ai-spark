@@ -16,9 +16,9 @@ const Footer = () => {
             <div className="space-y-4">
               <div className="flex items-center space-x-3">
                 <img 
-                  src="/lovable-uploads/9da8b5f8-0cff-4611-8a2a-71824747684b.png" 
+                  src="/lovable-uploads/956a76c8-104c-4ddb-b3a3-e3bf1e0245cb.png" 
                   alt="SG Logo" 
-                  className="h-8 w-8 object-contain brightness-0 invert"
+                  className="h-8 w-8 object-cover rounded-full"
                 />
                 <span className="font-poppins font-semibold text-xl">Sanu George</span>
               </div>
