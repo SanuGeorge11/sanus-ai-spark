@@ -79,6 +79,12 @@ const Projects = () => {
                       alt={project.title}
                       className="w-full h-64 lg:h-full object-cover group-hover:scale-105 transition-smooth duration-500"
                     />
+                    {project.isAiEnhanced && (
+                      <div className="absolute top-4 left-4 inline-flex items-center space-x-2 bg-accent/90 text-accent-foreground px-3 py-1 rounded-full text-sm font-medium">
+                        <Sparkles size={14} />
+                        <span>AI Enhanced</span>
+                      </div>
+                    )}
                   </div>
 
                   {/* Project Content */}
