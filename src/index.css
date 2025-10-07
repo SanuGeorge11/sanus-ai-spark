@@ -56,7 +56,6 @@
     --gradient-gold: linear-gradient(135deg, hsl(var(--gold)), hsl(var(--gold-light)));
     --gradient-subtle: linear-gradient(180deg, hsl(var(--white)), hsl(var(--gray-50)));
     --gradient-overlay: linear-gradient(135deg, hsl(var(--black) / 0.8), hsl(var(--black) / 0.4));
-    --gradient-animated: linear-gradient(-45deg, hsl(var(--background)), hsl(var(--gray-50)), hsl(var(--gray-100)), hsl(var(--accent) / 0.05));
 
     /* Shadows */
     --shadow-soft: 0 2px 20px hsl(var(--black) / 0.08);
@@ -186,12 +185,6 @@
     background: radial-gradient(circle at 50% 50%, hsl(var(--accent) / 0.1) 0%, transparent 50%),
                 linear-gradient(135deg, hsl(var(--background)) 0%, hsl(var(--gray-50)) 100%);
   }
-
-  .animated-bg {
-    background: var(--gradient-animated);
-    background-size: 400% 400%;
-    animation: gradientShift 15s ease infinite;
-  }
 }
 
 @layer utilities {
@@ -234,17 +227,5 @@
   }
   to {
     opacity: 1;
-  }
-}
-
-@keyframes gradientShift {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
   }
 }

@@ -52,7 +52,7 @@ const Projects = () => {
   ];
 
   return (
-    <section id="projects" className="section-padding animated-bg">
+    <section id="projects" className="section-padding">
       <div className="container-custom">
         <div className="max-w-6xl mx-auto">
           {/* Section Header */}
