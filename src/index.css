@@ -185,6 +185,14 @@
     background: radial-gradient(circle at 50% 50%, hsl(var(--accent) / 0.1) 0%, transparent 50%),
                 linear-gradient(135deg, hsl(var(--background)) 0%, hsl(var(--gray-50)) 100%);
   }
+
+  .section-gradient-bg {
+    background: linear-gradient(135deg, 
+                hsl(var(--accent) / 0.08) 0%, 
+                hsl(var(--background)) 30%,
+                hsl(var(--accent) / 0.05) 60%,
+                hsl(var(--background)) 100%);
+  }
 }
 
 @layer utilities {
