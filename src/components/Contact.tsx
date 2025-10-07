@@ -35,7 +35,7 @@ const Contact = () => {
       icon: Linkedin,
       title: 'LinkedIn',
       value: 'Connect with me',
-      href: 'https://www.linkedin.com/in/sanu-george-a424291b7'
+      href: 'https://www.linkedin.com/in/sanu-george-a424291b7/'
     },
     {
       icon: MapPin,
@@ -130,7 +130,7 @@ const Contact = () => {
                     className="btn-outline flex-1"
                   >
                     <a 
-                      href="https://www.linkedin.com/in/sanu-george-a424291b7" 
+                      href="https://www.linkedin.com/in/sanu-george-a424291b7/" 
                       target="_blank" 
                       rel="noopener noreferrer"
                     >
