@@ -28,8 +28,8 @@ const Contact = () => {
     {
       icon: Mail,
       title: 'Email',
-      value: 'sanuxxxx@gmail.com',
-      href: 'mailto:sanuxxxx@gmail.com'
+      value: 'sanugeorge11@gmail.com',
+      href: 'mailto:sanugeorge11@gmail.com'
     },
     {
       icon: Linkedin,
@@ -119,7 +119,7 @@ const Contact = () => {
                     asChild 
                     className="btn-gold flex-1"
                   >
-                    <a href="mailto:sanuxxxx@gmail.com">
+                    <a href="mailto:sanugeorge11@gmail.com">
                       <Mail size={16} className="mr-2" />
                       Send Email
                     </a>
