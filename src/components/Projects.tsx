@@ -1,4 +1,4 @@
-import { ExternalLink, Github, Sparkles } from 'lucide-react';
+import { ExternalLink, Github } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader } from '@/components/ui/card';
 import project1 from '@/assets/project1.jpg';
@@ -18,8 +18,7 @@ const Projects = () => {
         'AI-generated descriptions',
         'Bulk upload processing',
         'SEO optimization'
-      ],
-      isAiEnhanced: true
+      ]
     },
     {
       id: 2,
@@ -32,8 +31,7 @@ const Projects = () => {
         'Advanced filtering system',
         'Premium product showcase',
         'Mobile-first approach'
-      ],
-      isAiEnhanced: false
+      ]
     },
     {
       id: 3,
@@ -46,8 +44,7 @@ const Projects = () => {
         'Character customization',
         'Interactive elements',
         'Age-appropriate content'
-      ],
-      isAiEnhanced: true
+      ]
     }
   ];
 
