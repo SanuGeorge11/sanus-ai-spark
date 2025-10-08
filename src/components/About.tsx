@@ -74,15 +74,15 @@ const About = () => {
               {skills.map((skill, index) => (
                 <div 
                   key={skill.title}
-                  className={`bg-card/80 backdrop-blur-sm p-6 rounded-xl shadow-soft hover:shadow-gold hover:scale-105 transition-all duration-300 group border border-border/50 scroll-reveal scroll-reveal-delay-${index + 2}`}
+                  className={`bg-white/90 backdrop-blur-md p-6 rounded-2xl shadow-lg hover:shadow-purple hover:scale-110 hover:-rotate-2 transition-all duration-500 group border-2 border-purple/20 scroll-reveal scroll-reveal-delay-${index + 2}`}
                 >
                   <div className="flex items-center space-x-4 mb-4">
-                    <div className="w-12 h-12 bg-accent/10 rounded-lg flex items-center justify-center group-hover:bg-accent/20 transition-smooth">
-                      <skill.icon size={24} className="text-accent" />
+                    <div className="w-14 h-14 bg-gradient-to-br from-purple to-teal rounded-xl flex items-center justify-center group-hover:rotate-12 transition-all duration-300 shadow-md">
+                      <skill.icon size={26} className="text-white" />
                     </div>
-                    <h3 className="font-poppins font-semibold text-lg">{skill.title}</h3>
+                    <h3 className="font-poppins font-bold text-lg text-purple-dark">{skill.title}</h3>
                   </div>
-                  <p className="text-muted-foreground text-sm leading-relaxed">
+                  <p className="text-foreground/80 text-sm leading-relaxed">
                     {skill.description}
                   </p>
                 </div>

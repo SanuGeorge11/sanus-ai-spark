@@ -58,6 +58,18 @@ export default {
 					light: 'hsl(var(--gold-light))',
 					dark: 'hsl(var(--gold-dark))'
 				},
+				purple: {
+					DEFAULT: 'hsl(var(--purple))',
+					light: 'hsl(var(--purple-light))',
+					dark: 'hsl(var(--purple-dark))'
+				},
+				teal: {
+					DEFAULT: 'hsl(var(--teal))',
+					light: 'hsl(var(--teal-light))'
+				},
+				pink: {
+					DEFAULT: 'hsl(var(--pink))'
+				},
 				brand: {
 					black: 'hsl(var(--black))',
 					white: 'hsl(var(--white))',
