@@ -46,11 +46,11 @@ const Contact = () => {
   ];
 
   return (
-    <section id="contact" className="section-padding section-gradient-bg">
-      <div className="container-custom">
+    <section id="contact" className="section-padding section-contact-bg">
+      <div className="container-custom relative z-10">
         <div className="max-w-6xl mx-auto">
           {/* Section Header */}
-          <div className="text-center mb-16">
+          <div className="text-center mb-16 scroll-reveal">
             <h2 className="font-poppins font-bold text-4xl md:text-5xl mb-6">
               Get In <span className="text-gradient">Touch</span>
             </h2>
@@ -63,7 +63,7 @@ const Contact = () => {
 
           <div className="grid lg:grid-cols-2 gap-12">
             {/* Contact Information */}
-            <div className="space-y-8">
+            <div className="space-y-8 scroll-reveal scroll-reveal-delay-1">
               <div>
                 <h3 className="font-poppins font-semibold text-2xl mb-6">
                   Let's Start a Conversation
@@ -79,7 +79,7 @@ const Contact = () => {
               {/* Contact Cards */}
               <div className="space-y-4">
                 {contactInfo.map((info) => (
-                  <Card key={info.title} className="border-border/50 shadow-soft hover:shadow-medium transition-smooth group">
+                  <Card key={info.title} className="border-border/50 bg-card/80 backdrop-blur-sm shadow-soft hover:shadow-gold hover:scale-105 transition-all duration-300 group">
                     <CardContent className="p-6">
                       <div className="flex items-center space-x-4">
                         <div className="w-12 h-12 bg-accent/10 rounded-lg flex items-center justify-center group-hover:bg-accent/20 transition-smooth">
@@ -143,7 +143,7 @@ const Contact = () => {
             </div>
 
             {/* Contact Form */}
-            <Card className="border-border/50 shadow-soft">
+            <Card className="border-border/50 bg-card/80 backdrop-blur-sm shadow-soft hover:shadow-gold transition-all duration-300 scroll-reveal scroll-reveal-delay-2">
               <CardHeader>
                 <CardTitle className="font-poppins text-2xl">Send a Message</CardTitle>
               </CardHeader>

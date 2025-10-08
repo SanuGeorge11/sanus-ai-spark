@@ -25,11 +25,11 @@ const About = () => {
   ];
 
   return (
-    <section id="about" className="section-padding section-gradient-bg">
-      <div className="container-custom">
+    <section id="about" className="section-padding section-about-bg">
+      <div className="container-custom relative z-10">
         <div className="max-w-6xl mx-auto">
           {/* Section Header */}
-          <div className="text-center mb-16">
+          <div className="text-center mb-16 scroll-reveal">
             <h2 className="font-poppins font-bold text-4xl md:text-5xl mb-6">
               About <span className="text-gradient">Me</span>
             </h2>
@@ -38,7 +38,7 @@ const About = () => {
 
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             {/* Content */}
-            <div className="space-y-6">
+            <div className="space-y-6 scroll-reveal scroll-reveal-delay-1">
               <p className="text-lg text-muted-foreground leading-relaxed">
                 I'm an aspiring <strong className="text-foreground">AI Automation & Prompt Engineering specialist</strong> with a 
                 foundation in web development and a growing interest in business innovation.
@@ -74,7 +74,7 @@ const About = () => {
               {skills.map((skill, index) => (
                 <div 
                   key={skill.title}
-                  className="bg-card p-6 rounded-xl shadow-soft hover:shadow-medium transition-smooth group border border-border/50"
+                  className={`bg-card/80 backdrop-blur-sm p-6 rounded-xl shadow-soft hover:shadow-gold hover:scale-105 transition-all duration-300 group border border-border/50 scroll-reveal scroll-reveal-delay-${index + 2}`}
                 >
                   <div className="flex items-center space-x-4 mb-4">
                     <div className="w-12 h-12 bg-accent/10 rounded-lg flex items-center justify-center group-hover:bg-accent/20 transition-smooth">

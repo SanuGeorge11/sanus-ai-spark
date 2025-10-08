@@ -49,11 +49,11 @@ const Projects = () => {
   ];
 
   return (
-    <section id="projects" className="section-padding section-gradient-bg">
+    <section id="projects" className="section-padding section-projects-bg">
       <div className="container-custom">
         <div className="max-w-6xl mx-auto">
           {/* Section Header */}
-          <div className="text-center mb-16">
+          <div className="text-center mb-16 scroll-reveal">
             <h2 className="font-poppins font-bold text-4xl md:text-5xl mb-6">
               Featured <span className="text-gradient">Projects</span>
             </h2>
@@ -67,7 +67,7 @@ const Projects = () => {
           {/* Projects Grid */}
           <div className="space-y-12">
             {projects.map((project, index) => (
-              <Card key={project.id} className="group overflow-hidden border-border/50 shadow-soft hover:shadow-medium transition-smooth">
+              <Card key={project.id} className={`group overflow-hidden border-border/50 shadow-soft hover:shadow-gold hover:scale-[1.02] transition-all duration-500 scroll-reveal scroll-reveal-delay-${index + 1}`}>
                 <div className={`grid lg:grid-cols-2 gap-0 ${index % 2 === 1 ? 'lg:grid-cols-2' : ''}`}>
                   {/* Project Image */}
                   <div className={`relative overflow-hidden ${index % 2 === 1 ? 'lg:order-2' : ''}`}>

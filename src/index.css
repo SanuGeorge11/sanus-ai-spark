@@ -193,6 +193,55 @@
                 hsl(var(--accent) / 0.05) 60%,
                 hsl(var(--background)) 100%);
   }
+
+  .section-about-bg {
+    background: linear-gradient(135deg, 
+                hsl(var(--background)) 0%,
+                hsl(240 60% 97%) 50%,
+                hsl(var(--gold) / 0.05) 100%);
+    position: relative;
+    overflow: hidden;
+  }
+
+  .section-about-bg::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    right: -10%;
+    width: 600px;
+    height: 600px;
+    background: radial-gradient(circle, hsl(var(--gold) / 0.15) 0%, transparent 70%);
+    border-radius: 50%;
+    animation: float 20s ease-in-out infinite;
+  }
+
+  .section-projects-bg {
+    background: linear-gradient(180deg,
+                hsl(220 60% 96%) 0%,
+                hsl(var(--background)) 50%,
+                hsl(260 60% 97%) 100%);
+  }
+
+  .section-contact-bg {
+    background: linear-gradient(135deg,
+                hsl(var(--gold) / 0.08) 0%,
+                hsl(220 60% 97%) 30%,
+                hsl(var(--background)) 60%,
+                hsl(280 40% 97%) 100%);
+    position: relative;
+  }
+
+  .section-contact-bg::before {
+    content: '';
+    position: absolute;
+    bottom: -30%;
+    left: -10%;
+    width: 500px;
+    height: 500px;
+    background: radial-gradient(circle, hsl(var(--gold) / 0.12) 0%, transparent 70%);
+    border-radius: 50%;
+    animation: float 15s ease-in-out infinite reverse;
+  }
 }
 
 @layer utilities {
@@ -206,6 +255,28 @@
 
   .animate-fade-in {
     animation: fadeIn 0.8s ease-out;
+  }
+
+  .scroll-reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    animation: scrollReveal 0.8s ease-out forwards;
+  }
+
+  .scroll-reveal-delay-1 {
+    animation-delay: 0.1s;
+  }
+
+  .scroll-reveal-delay-2 {
+    animation-delay: 0.2s;
+  }
+
+  .scroll-reveal-delay-3 {
+    animation-delay: 0.3s;
+  }
+
+  .scroll-reveal-delay-4 {
+    animation-delay: 0.4s;
   }
 }
 
@@ -235,5 +306,16 @@
   }
   to {
     opacity: 1;
+  }
+}
+
+@keyframes scrollReveal {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
