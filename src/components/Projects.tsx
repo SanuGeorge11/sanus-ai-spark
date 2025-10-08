@@ -67,7 +67,7 @@ const Projects = () => {
           {/* Projects Grid */}
           <div className="space-y-12">
             {projects.map((project, index) => (
-              <Card key={project.id} className={`group overflow-hidden border-4 border-purple/30 bg-white/95 shadow-xl hover:shadow-purple hover:scale-105 hover:-rotate-1 transition-all duration-500 scroll-reveal scroll-reveal-delay-${index + 1} rounded-3xl`}>
+              <Card key={project.id} className={`group overflow-hidden border-border/50 shadow-soft hover:shadow-gold hover:scale-[1.02] transition-all duration-500 scroll-reveal scroll-reveal-delay-${index + 1}`}>
                 <div className={`grid lg:grid-cols-2 gap-0 ${index % 2 === 1 ? 'lg:grid-cols-2' : ''}`}>
                   {/* Project Image */}
                   <div className={`relative overflow-hidden ${index % 2 === 1 ? 'lg:order-2' : ''}`}>
